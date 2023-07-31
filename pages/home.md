@@ -4,4 +4,4 @@ title: Home
 permalink: index.html
 ---
 
-{% include default.html %}
+{% include main.html %}
