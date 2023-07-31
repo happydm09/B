@@ -4,3 +4,14 @@
 .card-bg {background-color: #b6d4fe;}
 .Edu-font {font-family: 'Edu SA Beginner', cursive;}
 .center {text-align: center}
+
+@media (prefers-color-scheme: light) {
+  .body {color: black;background-color:white}
+  .scheme {color-scheme: light !important;}
+}
+
+@media (prefers-color-scheme: dark) {
+  .body {color: white;background-color:black}
+  .f-color {color:#e8e6e3 !important}
+  .nav-bg {background-color: #202325}
+}
