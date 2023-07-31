@@ -6,7 +6,7 @@ layout: main
 <header class='mt-4' style='text-align:center'>
   <div class='container'>
     <h1 class='Edu-font'>{{page.title}}</h1>
-    <h5>{{ page.date | date: '%B %d, %Y'}}</h5>
+    <h5>{{page.date}}</h5>
   </div>
 </header>
 
@@ -14,18 +14,6 @@ layout: main
 
 <section class="section">
     <div class="container">
-        <div class="heading has-text-centered">
-            <p class="title is-3">{{page.title}}</p>
-            <p class="subtitle is-6"><span class="tag is-white"><small>{{ page.date | date: '%B %d, %Y'}}</small></span></p>
-        </div>
-        <br>
-        <div class="columns is-multiline">
-
-            <div class="column is-half is-offset-one-quarter">
-                <div class="content">
-                    {{content}}
-                </div>
-            </div>
-        </div>
+      {{content}}
     </div>
 </section>
