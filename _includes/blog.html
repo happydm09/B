@@ -1,21 +1,20 @@
+<!-- Blog Posts -->
 <section class="section">
     <div class="container">
-        <div class="columns">
-            <div class="column is-half is-offset-one-quarter">
-
                 {% for post in site.posts %}
-                <div class="card bg-transparent shadow-sm">
-                    <a href='{{ post.url | relative_url}}'>
-                        <div class="card-body">
-                          <h5 class="card-title">{{post.title}}</h5>
-                          <p class="card-text" style='color:gray'></p>
-                          <br>
-                        </div>
-                    </a>
-               </div>
+        
+                <div class='container'>
+                <a href='{{ post.url | relative_url}}'>
+                <div class="card border-secondary">
+                <img src="..." class="card-img-top nav-bg" alt="...">
+                   <div class="card-body nav-bg">
+                    <h5 class="f-color card-title">{{post.title}}</h5>
+                    <p class="f-color card-text">{{post.preview}}</p>
+                   </div>
+                  </div>
+                </a>
+                </div>
+        
                 {% endfor %}
-
-            </div>
-        </div>
     </div>
 </section>
