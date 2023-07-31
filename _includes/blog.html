@@ -5,7 +5,7 @@
 
                 {% for post in site.posts %}
                 <div class="card bg-transparent shadow-sm">
-                    <a href='{{ post.slag | relative_url }}'>
+                    <a href='{{post.url}}'>
                         <div class="card-body">
                           <h5 class="card-title">{{post.title}}</h5>
                           <p class="card-text" style='color:gray'></p>
