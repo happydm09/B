@@ -4,18 +4,15 @@
             <div class="column is-half is-offset-one-quarter">
 
                 {% for post in site.posts %}
-                <div class="box">
-                    <article class="media">
-                        <div class="media-content">
-                            <div class="content">
-                                <a href="{{ post.url | relative_url }}">
-                                    <p class="title is-2">{{post.title}} <span class="tag is-white is-pulled-right"><small>{{ post.date | date: '%B %d, %Y'}}</small></span></p>
-                                    <p class="subtitle"><small>{{post.excerpt | remove: '<p>' | remove: '</p>'}}</small></p>
-                                </a>
-                            </div>
+                <div class="card bg-transparent shadow-sm">
+                    <a href='{{ post.url | relative_url }}'>
+                        <div class="card-body">
+                          <h5 class="card-title">{{post.title}}</h5>
+                          <p class="card-text" style='color:gray'></p>
+                          <br>
                         </div>
-                    </article>
-                </div>
+                    </a>
+               </div>
                 {% endfor %}
 
             </div>
