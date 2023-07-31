@@ -2,7 +2,7 @@
 layout: post
 title: "Hello World!"
 date: 2017-06-09
-slag: asdsd
+preview: My First Post
 ---
 
 Hey, it's just my first post!
