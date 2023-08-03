@@ -3,6 +3,7 @@ layout: post
 title: "Hello World!"
 date: 2017-06-09
 preview: My First Post
+tags: [Jekyll, blog]
 ---
 
 Hey, it's just my first post!
