@@ -1,3 +1,4 @@
 function SelectedTag(e) {
-  console.log(e.tag)
+  var tag = e.getAttribute('Tag')
+  console.log(tag)
 } 
