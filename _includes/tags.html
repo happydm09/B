@@ -3,4 +3,18 @@
   {% for tag in site.data.tags %}
     <span class="tag" data-tag="{{tag}}">{{tag}}</span>
   {% endfor %}
+
+  {% for post in site.posts %}
+    <div class='container'>
+                <a class='a' href='{{ post.url | relative_url}}'>
+                <div class="card border-0">
+                   <div class="card-body nav-bg">
+                    <h5 class="f-color card-title">{{post.title}}</h5>
+                    <p class="f-color card-text">{{post.preview}}</p>
+                   </div>
+                  </div>
+                </a>
+                </div>
+                <br>
+  {% endfor %}
 </div>
