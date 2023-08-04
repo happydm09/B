@@ -1,5 +1,5 @@
 function SelectedTag(e) {
-  var tag = e.getAttribute('Tag')
+  var tag = e.getAttribute('tag')
   console.log(tag)
   alert(tag)
 } 
