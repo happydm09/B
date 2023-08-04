@@ -3,4 +3,4 @@ layout: main
 title: Tags
 permalink: /tag
 ---
-{% include tags.html %}
+{% include nav.html %} {% include tags.html %}
