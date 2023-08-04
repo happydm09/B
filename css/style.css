@@ -24,3 +24,18 @@
   .f-color {color:#e8e6e3 !important}
   .nav-bg {background-color: #202325}
 }
+
+.tag {
+  background-color: rgba(128, 128, 128, 0.2 );
+  display: inline-flex;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+  border: 1.2px ridge gray
+}
+
+.tag:hover {
+  background-color: rgba(128, 128, 128, 0.3);
+}
