@@ -1,7 +1,6 @@
 <!-- Tag -->
 <div>
   {% for tag in site.data.tags %}
-  <span class="tag" data-tag="{{tag}}">
-  </span>
-{% endfor %}
+    <span class="tag" data-tag="{{tag}}">{{tag}}</span>
+  {% endfor %}
 </div>
