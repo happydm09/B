@@ -1,7 +1,7 @@
 <!-- Tag -->
 <div>
   {% for tag in site.data.tags %}
-    <span class="tag" data-tag="{{tag}}">{{tag}}</span>
+    <span class="tag" tag="{{tag}}">{{tag}}</span>
   {% endfor %}
 
   {% for post in site.posts %}
@@ -18,3 +18,5 @@
                 <br>
   {% endfor %}
 </div>
+
+<script src="{{ '/js/tag.js' | relative_url }}"></script>
