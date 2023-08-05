@@ -3,7 +3,10 @@
   {% for tag in site.data.tags %}
     <span class="tag" tag="{{tag}}" onClick='SelectedTag(this)'>{{tag}}</span>
   {% endfor %}
+</div>
 
+<div id='posts'>
+    
   {% for post in site.posts %}
     <div class='container'
       {% if post.tags %}
@@ -22,6 +25,7 @@
                 </div>
                 <br>
   {% endfor %}
+    
 </div>
 
 <script src="{{ '/js/tag.js' | relative_url }}"></script>
