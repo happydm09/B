@@ -11,7 +11,7 @@ function SelectedTag(e) {
     console.log('이미 있음')
     
     for (var i=0; i < posts.length; i++) {
-      console.log(posts[i])
+      posts[i].addClass('hide');
     }
     
   } else {
@@ -20,7 +20,15 @@ function SelectedTag(e) {
     console.log(tag)
   
     for (var i=0; i < posts.length; i++) {
-      console.log(posts[i])
+      posts[i].removeClass('hide');
     }
   }
+}
+
+function Hide_All_Posts() {
+  var posts = document.getElementById('posts').querySelectorAll('div.container')
+  
+  for (var i=0; i < posts.length; i++) {
+      posts[i].addClass('hide');
+    }
 }
