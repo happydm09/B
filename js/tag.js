@@ -31,3 +31,5 @@ function Hide_All_Posts() {
       posts[i].className += ' hide'
     }
 }
+
+Hide_All_Posts()
