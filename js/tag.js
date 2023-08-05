@@ -15,6 +15,7 @@ function SelectedTag(e) {
 
     if (cur_tag == '') {
       Show_All_Posts()
+      alert('refresh')
     }
     
   } else {
@@ -25,7 +26,6 @@ function SelectedTag(e) {
       posts[i].className = posts[i].className.replace(' hide', '')
     }
   }
-    alert(cur_tag)
 }
 
 function Hide_All_Posts() {
