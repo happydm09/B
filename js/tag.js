@@ -4,6 +4,8 @@ function SelectedTag(e) {
   var tag = e.getAttribute('tag')
   var query = `[data-${tag}]`
   var posts = document.getElementById('posts').querySelectorAll(query)
+
+  alert(cur_tag)
   
   if (cur_tag.includes(tag)) {
     e.className = e.className.replace(' selected', '')
