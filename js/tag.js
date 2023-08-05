@@ -42,3 +42,5 @@ function Show_All_Posts() {
       posts[i].className = posts[i].className.replace(' hide', '')
     }
 }
+
+Hide_All_Posts()
