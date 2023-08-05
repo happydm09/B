@@ -10,7 +10,7 @@ function SelectedTag(e) {
     console.log('이미 있음')
     
     for (var i=0; i < posts.length; i++) {
-      posts[i].className += 'hide'
+      posts[i].className += ' hide'
     }
     
   } else {
@@ -19,7 +19,7 @@ function SelectedTag(e) {
     console.log(tag)
   
     for (var i=0; i < posts.length; i++) {
-      posts[i].className = posts[i].className.replace('hide', '')
+      posts[i].className = posts[i].className.replace(' hide', '')
     }
   }
 }
@@ -28,6 +28,6 @@ function Hide_All_Posts() {
   var posts = document.getElementById('posts').querySelectorAll('div.container')
   
   for (var i=0; i < posts.length; i++) {
-      posts[i].className += 'hide'
+      posts[i].className += ' hide'
     }
 }
