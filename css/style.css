@@ -37,7 +37,8 @@
 }
 
 .tag:hover {
-  background-color: rgba(128, 128, 128, 0.3);
+  background-color: rgba(131, 128, 128, 0.3);
 }
 
 .hide { display: none }
+.selected {background-color: rgba(131, 205, 255, 0.5 );}
