@@ -4,8 +4,6 @@ function SelectedTag(e) {
   var tag = e.getAttribute('tag')
   var query = `[data-${tag}]`
   var posts = document.getElementById('posts').querySelectorAll(query)
-
-  alert(cur_tag)
   
   if (cur_tag.includes(tag)) {
     e.className = e.className.replace(' selected', '')
@@ -27,6 +25,7 @@ function SelectedTag(e) {
       posts[i].className = posts[i].className.replace(' hide', '')
     }
   }
+    alert(cur_tag)
 }
 
 function Hide_All_Posts() {
