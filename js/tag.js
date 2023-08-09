@@ -1,4 +1,4 @@
-$("[tag]").click((e) => { filter(e.target.dataset.tag) })
+$("[data-tag]").click((e) => { filter(e.target.dataset.tag) })
 
 function filter(tag) {
   $('.hidden').removeClass('hidden');
