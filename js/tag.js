@@ -14,7 +14,7 @@ function filter() {
   $('.hide').removeClass('hide');
   $('.post').each((index, el) => {
     for (var i=0; i < tags.lenght; i++) {
-      if (!el.hasAttribute(`data-${tag[i]}`)) { $(el).addClass('hide') }
+      if (!el.hasAttribute(`data-${tags[i]}`)) { $(el).addClass('hide') }
     }
   })
 }
