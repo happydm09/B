@@ -11,7 +11,7 @@
     <div class='container post'
       {% if post.tags %}
       {% for tag in post.tags %}
-        data-{{ tag }}
+        data-tag="{{ tag }}"
       {% endfor %}
     {% endif %}>
                 <a class='a' href='{{ post.url | relative_url}}'>
