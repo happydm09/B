@@ -8,6 +8,7 @@ $("[data-tag]").click((e) => {
     tags.push(tag)
     filter() 
   }
+  console.log(tags)
 })
 
 function filter() {
