@@ -3,7 +3,7 @@ var tags = []
 $("[data-tag]").click((e) => {
   var tag = e.target.dataset.tag
   
-  if (tags.includes(tag)) { tags.splice(tag) }
+  if (tags.includes(tag)) { tags.splice(tag, 1) }
   else {
     tags.push(tag)
     filter() 
