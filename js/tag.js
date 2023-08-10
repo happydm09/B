@@ -13,10 +13,10 @@ $("[data-tag]").click((e) => {
 function filter() {
   $('.hide').removeClass('hide');
   $('.post').each((index, el) => {
+    var num = 0
     for (var i=0; i < tags.length; i++) {
-      console.log(tags[i])
-      if (!el.hasAttribute(`data-${tags[i]}`)) { $(el).addClass('hide') }
-      else {$(el).removeClass('hide')}
+      if (el.hasAttribute(`data-${tags[i]}`)) { num += 1 }
     }
+    if (num == 0) { $(el).addClass('hide') }
   })
 }
