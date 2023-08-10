@@ -37,4 +37,11 @@
 }
 
 .hide { display: none }
-.selected {background-color: rgba(131, 205, 255, 0.5 );}
+.selected { background-color: rgba(131, 205, 255, 0.5 ) }
+
+.highlight {
+  background-color: #e8e8e8;
+  padding: 0.5em;
+}
+
+.highlight pre { margin-bottom: 0 }
