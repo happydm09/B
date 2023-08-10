@@ -75,3 +75,13 @@
 .highlight .ss {
   color: #90a959;
 }
+
+.highlight {background-color: #F8F8F8}
+
+@media (prefers-color-scheme: light) {
+  .highlight {background-color: #F8F8F8}
+}
+
+@media (prefers-color-scheme: dark) {
+  .highlight {background-color: #1C1E1F}
+}
