@@ -15,8 +15,6 @@ function filter() {
   $('.post').each((index, el) => {
     var num = 0
     for (var i=0; i < tags.length; i++) {
-      $(`.tag[data-tag=${tagName}]`).addClass('selected');
-      
       if (el.hasAttribute(`data-${tags[i]}`)) { num += 1 }
     }
     if (num == 0) { $(el).addClass('hide') }
