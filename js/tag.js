@@ -11,7 +11,7 @@ $("[data-tag]").click((e) => {
 })
 
 function filter() {
-  $('.hide').removeClass('hide');
+  $('.hide').removeClass('hide')
   $('.post').each((index, el) => {
     var num = 0
     for (var i=0; i < tags.length; i++) {
@@ -19,12 +19,14 @@ function filter() {
     }
     if (num == 0) { $(el).addClass('hide') }
   })
+
+  if (tags.length == 0) { $('.hide').removeClass('hide') }
 }
 
 function SelectTags() {
-  $(`.selected`).removeClass('selected');
+  $(`.selected`).removeClass('selected')
   
   for (var i=0; i < tags.length; i++) {
-      $(`.tag[data-tag=${tags[i]}]`).addClass('selected');
+      $(`.tag[data-tag=${tags[i]}]`).addClass('selected')
     }
 }
