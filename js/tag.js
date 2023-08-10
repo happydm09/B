@@ -22,6 +22,8 @@ function filter() {
 }
 
 function SelectTags() {
+  $(`.selected`).removeClass('selected');
+  
   for (var i=0; i < tags.length; i++) {
       $(`.tag[data-tag=${tags[i]}]`).addClass('selected');
     }
