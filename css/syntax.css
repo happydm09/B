@@ -76,7 +76,7 @@
   color: #90a959;
 }
 
-.highlight {background-color: #F8F8F8}
+.highlight {background-color: #F8F8F8; padding: 10px;}
 
 @media (prefers-color-scheme: light) {
   .highlight {background-color: #F8F8F8}
