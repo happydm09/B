@@ -7,12 +7,12 @@ layout: main
   <div class='container'>
     <h1 class='Edu-font'>{{page.title}}</h1>
     <h5>{{page.date| date: "%Y-%m-%d"}}</h5>
-    <h5>
+    <h6>
           {% if page.tags %}
             {% for tag in page.tags %}
               <span class="tag">#{{ tag }}</span>
             {% endfor %}
-          {% endif %}</h5>
+          {% endif %}</h6>
   </div>
 </header>
 
