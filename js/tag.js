@@ -1,3 +1,5 @@
+// Tag 
+
 var tags = []
 
 $("[data-tag]").click((e) => {
@@ -33,3 +35,27 @@ function SelectTags() {
       $(`.tag[data-tag=${tags[i]}]`).addClass('selected')
     }
 }
+
+// Search
+
+function getAPI(text) {
+  const xhr = new XMLHttpRequest();
+ 
+  xhr.open('GET', text, true);
+  xhr.responseType = 'text';
+  xhr.send();
+
+  xhr.onload = function() {
+    return xhr.response;
+  }
+}
+
+function SearchPost() {
+  var want = ''
+  var url =  '{{ site.baseurl }}/search.json'
+  var posts = getAPI(url)
+
+  console.log(posts)
+}
+
+SearchPost()
