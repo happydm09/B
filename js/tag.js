@@ -53,6 +53,7 @@ function getAPI(text) {
 function SearchPost() {
   var want = ''
   var url =  '{{ site.base-url }}/search.json'
+  console.log(url)
   var posts = getAPI(url)
 
   console.log(posts)
