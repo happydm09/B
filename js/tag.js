@@ -52,7 +52,7 @@ function getAPI(text) {
 
 function SearchPost() {
   var want = ''
-  var url =  '/B/search.json'
+  var url =  'https://happydm09.github.io/B/search.json'
   console.log(url)
   var posts = getAPI(url)
 
