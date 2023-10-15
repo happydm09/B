@@ -1,28 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&family=Gowun+Dodum&display=swap');
 
-@font-face {
-    font-family: 'KCCChassam';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
 .nav-bg {background-color: #e3f2fd;}
 .card-bg {background-color: #b6d4fe;}
-.Edu-font {font-family: 'Edu SA Beginner', cursive;}
-.Text-Font {font-family: 'KCCChassam';}
+.Edu-font {font-family: 'Edu SA Beginner'}
 .center {text-align: center}
 .a {text-decoration: none;}
 
 @media (prefers-color-scheme: light) {
   .body {color: black;background-color:white}
   .scheme {color-scheme: light !important;}
+  .footer { background-color: #EFEFEF }
 }
 
 @media (prefers-color-scheme: dark) {
   .body {color: white;background-color:black}
   .f-color {color:#e8e6e3 !important}
   .nav-bg {background-color: #202325}
+  .footer { background-color: #19181B }
 }
 
 .tag {
@@ -36,5 +30,6 @@
   border: 1.2px ridge gray
 }
 
-.hide { display: none }
-.selected { background-color: rgba(131, 205, 255, 0.5 ) }
+.tag:hover {
+  background-color: rgba(128, 128, 128, 0.3);
+}
