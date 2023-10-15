@@ -10,6 +10,7 @@
   .body {color: black;background-color:white}
   .scheme {color-scheme: light !important;}
   .footer { background-color: #EFEFEF }
+  .post-bg { background-color: white }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,6 +18,7 @@
   .f-color {color:#e8e6e3 !important}
   .nav-bg {background-color: #202325}
   .footer { background-color: #19181B }
+  .post-bg { background-color: black }
 }
 
 .tag {
