@@ -6,7 +6,7 @@
                 <div class='container'>
                 <a class='a' href='{{ post.url | relative_url}}'>
                 <div class="card border-0">
-                   <div class="card-body nav-bg">
+                   <div class="card-body">
                     <h6 class="f-color card-text">{{post.date| date: "%Y-%m-%d"}}</h6>
                     <h5 class="f-color card-title">{{post.title}}</h5>
                     <p class="f-color card-text">{{post.preview}}</p>
@@ -14,7 +14,7 @@
                   </div>
                 </a>
                 </div>
-                <br>
+                <hr>
         
                 {% endfor %}
     </div>
