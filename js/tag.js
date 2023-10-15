@@ -61,6 +61,6 @@ function SearchPost() {
 
 SearchPost()
 
-$(document).ready(function() {
-  $('#img').addClass('img-fluid');
-});
+// $(document).ready(function() {
+//   $('#img').addClass('img-fluid');
+// });
