@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&family=Gowun+Dodum&display=swap');
 
+@font-face {
+    font-family: 'KCCChassam';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .nav-bg {background-color: #e3f2fd;}
 .card-bg {background-color: #b6d4fe;}
 .Edu-font {font-family: 'Edu SA Beginner'}
