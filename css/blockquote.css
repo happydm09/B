@@ -9,14 +9,6 @@ blockquote p {
   margin-bottom: 0;
 }
 
-blockquote:before {
-  content: "\201C";
-  font-size: 40px;
-  line-height: 1;
-  vertical-align: -0.2em;
-  color: #777;
-}
-
 blockquote cite {
  display:block; 
  text-align:right; 
