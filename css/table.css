@@ -7,4 +7,4 @@ table { border-collapse: collapse; width: 100%; }
 @media (prefers-color-scheme: light) {
   th, td { border: 1px solid #ddd; padding: 8px; }
   th { background-color: #262323; }
-}
+} 
