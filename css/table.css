@@ -1,10 +1,10 @@
 table { border-collapse: collapse; width: 100%; }
 
 @media (prefers-color-scheme: dark) {
-  th, td { border: 1px solid #ddd; padding: 8px; }
-  th { background-color: #262323; }
-}
-@media (prefers-color-scheme: light) {
   th, td { border: 1px solid #30363D; padding: 8px; }
   th { background-color: #f2f2f2; }
+}
+@media (prefers-color-scheme: light) {
+  th, td { border: 1px solid #ddd; padding: 8px; }
+  th { background-color: #262323; }
 }
