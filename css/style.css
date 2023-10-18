@@ -47,4 +47,4 @@
 .hide { display: none }
 .selected { background-color: rgba(131, 205, 255, 0.5 ) }
 
-.img-text { text-align: center; margin-top: 7px; margin-bottom: 7px; color: #989896; font-style: italic;}
+.img-text { text-align: center; margin-top: 10px; margin-bottom: 13px; color: #989896; font-style: italic; font-size: 14px;}
