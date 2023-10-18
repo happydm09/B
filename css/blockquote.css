@@ -1,0 +1,26 @@
+blockquote {
+  border-left: 4px solid #ddd;
+  margin: 0;
+  padding: 10px;
+  color: #777;
+}
+
+blockquote p {
+  margin-bottom: 0;
+}
+
+blockquote:before {
+  content: "\201C";
+  font-size: 40px;
+  line-height: 1;
+  vertical-align: -0.2em;
+  color: #777;
+}
+
+blockquote cite {
+ display:block; 
+ text-align:right; 
+ font-size:.8em; 
+ color:#555; 
+ margin-top:.5em
+}
