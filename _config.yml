@@ -9,4 +9,4 @@ search-file: /B/search.json
 markdown: kramdown
 highlighter: rouge
 
-more-btn-text: 더보기
+more-btn-text: 글 더보기
