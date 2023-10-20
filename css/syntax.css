@@ -1,7 +1,5 @@
-
-
 @media (prefers-color-scheme: light) {
-  .highlight {background-color: #F8F8F8; color: #333;}
+  .highlight {background-color: #F8F8F8; padding: 5px;}
   .highlight table td { padding: 5px; }
   .highlight table pre { margin: 0; }
   .highlight .cm {
@@ -214,7 +212,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .highlight {background-color: #1C1E1F; color: #fff;}
+  .highlight {background-color: #1C1E1F; padding: 5px;}
   .highlight table td { padding: 5px; }
   .highlight table pre { margin: 0px; }
   .highlight .w { color: rgb(147, 161, 161); background-color: rgb(0, 43, 54); }
