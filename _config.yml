@@ -8,3 +8,5 @@ search-file: /B/search.json
 
 markdown: kramdown
 highlighter: rouge
+
+more-btn-text: 더보기
