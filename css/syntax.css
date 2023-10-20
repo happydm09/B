@@ -217,7 +217,7 @@
   .highlight {background-color: #1C1E1F; color: #fff;}
   .highlight table td { padding: 5px; }
   .highlight table pre { margin: 0px; }
-  .highlight, .highlight .w { color: rgb(147, 161, 161); background-color: rgb(0, 43, 54); }
+  .highlight .w { color: rgb(147, 161, 161); background-color: rgb(0, 43, 54); }
   .highlight .err { color: rgb(0, 43, 54); background-color: rgb(220, 50, 47); }
   .highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs { color: rgb(101, 123, 131); }
   .highlight .cp { color: rgb(181, 137, 0); }
