@@ -1,7 +1,8 @@
 <!-- Blog Posts -->
 <section class="section">
     <div class="container">
-                {% for post in site.posts %}
+                <hr>
+                {% for post in site.posts limit:5 %}
         
                 <div class='container'>
                 <a class='a' href='{{ post.url | relative_url}}'>
