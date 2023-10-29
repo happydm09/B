@@ -19,7 +19,7 @@ blockquote cite {
   }
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   blockquote {
     border-left: 4px solid #30363D;
     margin: 0;
