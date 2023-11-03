@@ -40,29 +40,17 @@ $("[data-tag]").click((e) => {
 
 // Search
 
-// function getAPI(text) {
+// function SearchPost(key) {
 //   const xhr = new XMLHttpRequest();
  
-//   xhr.open('GET', text, true);
-//   xhr.responseType = 'text';
-//   xhr.send();
+//   xhr.open('GET', text, true)
+//   xhr.responseType = 'json'
+//   xhr.send()
 
 //   xhr.onload = function() {
-//     return xhr.response;
+//      var json = xhr.response
+//      for (var i = 0; i < json.length; i++) {
+       
+//      }
 //   }
 // }
-
-// function SearchPost() {
-//   var want = ''
-//   var url =  'https://happydm09.github.io/B/search.json'
-//   console.log(url)
-//   var posts = getAPI(url)
-
-//   console.log(posts)
-// }
-
-// SearchPost()
-
-// $(document).ready(function() {
-//   $('#img').addClass('img-fluid');
-// });
