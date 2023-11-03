@@ -2,13 +2,22 @@
 layout: none
 ---
 
+{% assign posts_json = "" %}
+
 {% for post in site.posts %}
-  [
-    "title"    : "{{ post.title | escape | jsonify }}",
-    "preview" : "{{ post.preview | jsonify }}",
-    "tags"     : "{{ post.tags | join: ', ' | jsonify }}",
-    "url"      : "{{ site.baseurl }}{{ post.url }}",
-    "date"     : "{{ post.date | jsonify  }}"
-    "content" : "{{ post.content | jsonify }}"
-  ] {% unless forloop.last %},{% endunless %}
+  {% capture post_json %}
+    {
+      "title"   : "{{ post.title | escape | jsonify }}",
+      "preview" : "{{ post.preview | jsonify }}",
+      "tags"    : "{{ post.tags | join: ', ' | jsonify }}",
+      "url"     : "{{ site.baseurl }}{{ post.url }}",
+      "date"    : "{{ post.date | jsonify }}",
+      "content" : "{{ post.content | jsonify }}"
+    }
+  {% endcapture %}
+
+  {% assign posts_json = posts_json | append: post_json %}
+  {% unless forloop.last %}{% assign posts_json = posts_json | append: ',' %}{% endunless %}
 {% endfor %}
+
+[{{ posts_json }}]
