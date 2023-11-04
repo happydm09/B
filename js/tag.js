@@ -1,6 +1,36 @@
-// Tag 
+// Var 
 
 var tags = []
+var KEY = ''
+
+// Search
+
+function SearchPost(key) {
+  const xhr = new XMLHttpRequest();
+ 
+  xhr.open('GET', "https://happydm09.github.io/B/search.json", true)
+  xhr.responseType = 'json'
+  xhr.send()
+
+  xhr.onload = function() {
+     var json = xhr.response
+     for (var i = 0; i < json.length; i++) {
+       var c = json[i]
+       var s = c['title'] + c['preview'] + c['content']
+
+       if (s.indexOf(key) == -1) { $(`[post-${i+1}]`).addClass('hide') }
+       else { $(`[post-${i+1}]`).removeClass('hide') }
+     }
+  }
+}
+
+function Search() {
+  var key = 'test'
+  KEY =  key
+  SearchPost(key)
+}
+
+// Tag
 
 function filter() {
   $('.hide').removeClass('hide')
@@ -36,26 +66,5 @@ $("[data-tag]").click((e) => {
   
   filter()
   SelectTags()
+  SearchPost(KEY)
 })
-
-// Search
-
-function SearchPost(key) {
-  const xhr = new XMLHttpRequest();
- 
-  xhr.open('GET', "https://happydm09.github.io/B/search.json", true)
-  xhr.responseType = 'json'
-  xhr.send()
-
-  xhr.onload = function() {
-     var json = xhr.response
-     for (var i = 0; i < json.length; i++) {
-       var c = json[i]
-       var s = c['title'] + c['preview'] + c['content']
-
-       if (s.indexOf(key) != -1) { console.log(i) }
-     }
-  }
-}
-
-// SearchPost("Jekyll")
