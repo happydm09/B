@@ -27,6 +27,9 @@ function filter() {
       if (num == 0) { $(el).addClass('hide') }
     })
   }
+
+  console.log(tags)
+  console.log(index)
 }
 
 // Search
