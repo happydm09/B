@@ -40,17 +40,22 @@ $("[data-tag]").click((e) => {
 
 // Search
 
-// function SearchPost(key) {
-//   const xhr = new XMLHttpRequest();
+function SearchPost(key) {
+  const xhr = new XMLHttpRequest();
  
-//   xhr.open('GET', text, true)
-//   xhr.responseType = 'json'
-//   xhr.send()
+  xhr.open('GET', "https://happydm09.github.io/B/search.json", true)
+  xhr.responseType = 'json'
+  xhr.send()
 
-//   xhr.onload = function() {
-//      var json = xhr.response
-//      for (var i = 0; i < json.length; i++) {
-       
-//      }
-//   }
-// }
+  xhr.onload = function() {
+     var json = xhr.response
+     for (var i = 0; i < json.length; i++) {
+       var c = json[i]
+       var s = c['title'] + c['preview'] + c['content']
+
+       if (s.indexOf(key) != -1) { console.log(i) }
+     }
+  }
+}
+
+// SearchPost("Jekyll")
