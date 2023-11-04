@@ -7,7 +7,7 @@ function filter() {
   $('.hide').removeClass('hide')
   
   if (tags.length != 0) {
-    $('.post').each((index, el) => {
+    $('.post').each((ind, el) => {
       var num = 0
       var bool = 0
       
