@@ -7,12 +7,12 @@ layout: none
 {% for post in site.posts %}
   {% capture post_json %}
     {
-      "title"   : "{{ post.title | escape | jsonify }}",
-      "preview" : "{{ post.preview | jsonify }}",
-      "tags"    : "{{ post.tags | join: ', ' | jsonify }}",
+      "title"   : {{ post.title | escape | jsonify }},
+      "preview" : {{ post.preview | jsonify }},
+      "tags"    : {{ post.tags | join: ', ' | jsonify }},
       "url"     : "{{ site.baseurl }}{{ post.url }}",
-      "date"    : "{{ post.date | jsonify }}",
-      "content" : "{{ post.content | jsonify }}"
+      "date"    : {{ post.date | jsonify }},
+      "content" : {{ post.content | jsonify }}
     }
   {% endcapture %}
 
