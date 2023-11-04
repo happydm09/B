@@ -4,8 +4,9 @@ var tags = []
 var index = []
 
 function filter() {
+  $('.hide').removeClass('hide')
+  
   if (tags.length != 0) {
-    $('.hide').removeClass('hide')
     $('.post').each((index, el) => {
       var num = 0
       var bool = 0
@@ -20,6 +21,8 @@ function filter() {
 
       if (index.length != 0) {
         if (bool != 1) { $(el).addClass('hide') }
+      } else {
+        if (num != 0) { $(el).removeClass('hide') }
       }
       if (num == 0) { $(el).addClass('hide') }
     })
