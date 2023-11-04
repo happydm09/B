@@ -9,15 +9,6 @@
   {% endfor %}
 </div>
 
-<div id="search-container"></div>
-<script>
-  SimpleJekyllSearch({
-    searchInput: document.getElementById('search-input'),
-    resultsContainer: document.getElementById('results-container'),
-    json: '/search.json'
-  })
-</script>
-
 <div id='posts'>
     
   {% for post in site.posts %}
@@ -26,7 +17,8 @@
       {% for tag in post.tags %}
         data-{{ tag }}
       {% endfor %}
-    {% endif %}>
+    {% endif %}
+      post-{{ forloop.index }}>
                 <a class='a' href='{{ post.url | relative_url}}'>
                 <div class="card border-0">
                    <div class="card-body nav-bg">
