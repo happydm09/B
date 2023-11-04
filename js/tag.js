@@ -1,7 +1,30 @@
-// Var 
+// Main 
 
 var tags = []
-var KEY = ''
+var index = []
+
+function filter() {
+  if (tags.length != 0) {
+    $('.hide').removeClass('hide')
+    $('.post').each((index, el) => {
+      var num = 0
+      var bool = 0
+      
+      for (var i=0; i < tags.length; i++) { // Tag
+        if (el.hasAttribute(`data-${tags[i]}`)) { num += 1; break }
+      }
+      
+      for (var i=0; i < index.length; i++) { // Keyword
+        if (el.hasAttribute(`post-${index[i]}`)) { bool = 1; break }
+      }
+
+      if (index.length != 0) {
+        if (bool != 1) { $(el).addClass('hide') }
+      }
+      if (num == 0) { $(el).addClass('hide') }
+    })
+  }
+}
 
 // Search
 
@@ -14,42 +37,27 @@ function SearchPost(key) {
 
   xhr.onload = function() {
      var json = xhr.response
+     index = []
+    
      for (var i = 0; i < json.length; i++) {
        var c = json[i]
-       var s = c['title'] + c['preview'] + c['content']
-
-       if (s.indexOf(key) == -1) { $(`[post-${i+1}]`).addClass('hide') }
-       else { $(`[post-${i+1}]`).removeClass('hide') }
+       var s = c['title'] + c['preview'] +  c['content']
+      
+       if (s.indexOf(key) != -1) { index.push(i + 1) }
      }
   }
 }
 
 function Search() {
   var key = 'test'
-  KEY =  key
   SearchPost(key)
+  filter()
 }
 
 // Tag
 
-function filter() {
-  $('.hide').removeClass('hide')
-  $('.post').each((index, el) => {
-    var num = 0
-    for (var i=0; i < tags.length; i++) {
-      if (el.hasAttribute(`data-${tags[i]}`)) { num += 1 }
-    }
-    if (num == 0) { $(el).addClass('hide') }
-  })
-
-
-  if (tags.length == 0) { $('.hide').removeClass('hide') }
-}
-
-
 function SelectTags() {
   $(`.selected`).removeClass('selected')
-  
   for (var i=0; i < tags.length; i++) {
       $(`.tag[data-tag=${tags[i]}]`).addClass('selected')
     }
@@ -66,5 +74,4 @@ $("[data-tag]").click((e) => {
   
   filter()
   SelectTags()
-  SearchPost(KEY)
 })
