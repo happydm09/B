@@ -6,7 +6,7 @@ var index = []
 function filter() {
   $('.hide').removeClass('hide')
   
-  if (tags.length != 0) {
+  if (index.length != 0 or tags.length != 0) {
     $('.post').each((ind, el) => {
       var num = 0
       var bool = 0
