@@ -52,7 +52,8 @@ function filter() {
         }
     })
   } 
-  else if (index.length != 0) { filter_by_tag() }
+  else if (index.length != 0) { filter_by_keyword() }
+  else if (tags.length != 0) { filter_by_tag() }
   else { $('.hide').removeClass('hide') }
 }
 
