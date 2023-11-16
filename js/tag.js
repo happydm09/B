@@ -14,7 +14,7 @@ function filter_by_keyword() {
                 $(el).addClass('show') 
                 break
             }
-        }
+        })
     }
 }
 
@@ -29,7 +29,7 @@ function filter_by_tag() {
                 $(el).addClass('show') 
                 break
             }
-        }
+        })
     }
 }
 
@@ -45,43 +45,12 @@ function filter() {
                 $(el).removeClass('hide')
                 break
             }
-        }
+        })
     }
   } 
   else if (index.length != 0) { filter_by_tag() }
   else { $('.hide').removeClass('hide') }
 }
-
-// function filter() {
-//   $('.hide').removeClass('hide')
-  
-//   if (index.length != 0 || tags.length != 0) {
-//     $('.post').each((ind, el) => {
-//       var num = 0
-//       var bool = 0
-      
-//       for (var i=0; i < tags.length; i++) { // Tag
-//         if (el.hasAttribute(`data-${tags[i]}`)) { num += 1; break }
-//       }
-      
-//       for (var i=0; i < index.length; i++) { // Keyword
-//         if (el.hasAttribute(`post-${index[i]}`)) { bool = 1; break }
-//       }
-
-//       if (index.length != 0) {
-//         if (bool != 1) { $(el).addClass('hide') }
-//       } else {
-//         if (num != 0) { $(el).removeClass('hide') }
-//       }
-//       if (num == 0) { $(el).addClass('hide') }
-//     })
-//   }
-
-  
-
-//   console.log(tags)
-//   console.log(index)
-// }
 
 // Search
 
