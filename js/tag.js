@@ -14,8 +14,8 @@ function filter_by_keyword() {
                 $(el).addClass('show') 
                 break
             }
-        })
-    }
+        }
+    })
 }
 
 function filter_by_tag() {
@@ -29,8 +29,8 @@ function filter_by_tag() {
                 $(el).addClass('show') 
                 break
             }
-        })
-    }
+        }
+    })
 }
 
 function filter() {
@@ -45,12 +45,13 @@ function filter() {
                 $(el).removeClass('hide')
                 break
             }
-        })
-    }
+        }
+    })
   } 
   else if (index.length != 0) { filter_by_tag() }
   else { $('.hide').removeClass('hide') }
 }
+
 
 // Search
 
