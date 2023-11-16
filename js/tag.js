@@ -3,9 +3,6 @@
 var tags = []
 var index = []
 
-
-///////////////////////////////////////
-
 function filter_by_keyword() {
     $('.post').addClass('hide')
     $('.post').removeClass('show')
@@ -54,8 +51,6 @@ function filter() {
   else if (index.length != 0) { filter_by_tag() }
   else { $('.hide').removeClass('hide') }
 }
-
-////////////////////////////////////////
 
 // function filter() {
 //   $('.hide').removeClass('hide')
