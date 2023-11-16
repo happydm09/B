@@ -20,7 +20,7 @@ var index = []
 // }
 
 // function filter_by_tag() {
-    
+//     $('.hide').removeClass('hide')
 // }
 
 // function filter() {
