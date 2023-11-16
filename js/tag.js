@@ -82,8 +82,11 @@ function SearchPost(key) {
 
 function Search() {
   var key = 'test'
+    
   SearchPost(key)
   filter()
+    
+  SearchPost(key)
   filter()
 }
 
