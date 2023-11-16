@@ -6,7 +6,25 @@ var index = []
 
 ///////////////////////////////////////
 
+// function filter_by_keyword() {
+//     $('.post').addClass('hide')
+//     $('.post').each((ind, el) => {
+//         for (var i=0; i < index.length; i++) {
+//             if (el.hasAttribute(`post-${index[i]}`)) { 
+//                 $(el).removeClass('hide')
+//                 $(el).addClass('show') 
+//                 break
+//             }
+//         }
+//     }
+// }
+
+// function filter_by_tag() {
+    
+// }
+
 // function filter() {
+//   if (index.length != 0) { filter_by_keyword() }
 //   if (tags.length != 0 && index.length != 0) {
     
 //   } else if (index.length != 0) {
