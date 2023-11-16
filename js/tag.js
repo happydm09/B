@@ -35,6 +35,9 @@ function filter_by_tag() {
 
 
 function filter() {
+  console.log(index)
+  console.log(tags)
+    
   if (index.length != 0) { filter_by_keyword() }
   if (tags.length != 0 && index.length != 0) {
     filter_by_keyword()  
