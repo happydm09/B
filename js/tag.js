@@ -6,64 +6,87 @@ var index = []
 
 ///////////////////////////////////////
 
-// function filter_by_keyword() {
-//     $('.post').addClass('hide')
-//     $('.post').each((ind, el) => {
-//         for (var i=0; i < index.length; i++) {
-//             if (el.hasAttribute(`post-${index[i]}`)) { 
-//                 $(el).removeClass('hide')
-//                 $(el).addClass('show') 
-//                 break
-//             }
-//         }
-//     }
-// }
-
-// function filter_by_tag() {
-//     $('.hide').removeClass('hide')
-// }
-
-// function filter() {
-//   if (index.length != 0) { filter_by_keyword() }
-//   if (tags.length != 0 && index.length != 0) {
+function filter_by_keyword() {
+    $('.post').addClass('hide')
+    $('.post').removeClass('show')
     
-//   } else if (index.length != 0) {
+    $('.post').each((ind, el) => {
+        for (var i=0; i < index.length; i++) {
+            if (el.hasAttribute(`post-${index[i]}`)) { 
+                $(el).removeClass('hide')
+                $(el).addClass('show') 
+                break
+            }
+        }
+    }
+}
+
+function filter_by_tag() {
+    $('.post').addClass('hide')
+    $('.post').removeClass('show')
     
-//   }
-// }
+    $('.post').each((ind, el) => {
+        for (var i=0; i < tags.length; i++) {
+            if (el.hasAttribute(`data-${tags[i]}`)) { 
+                $(el).removeClass('hide')
+                $(el).addClass('show') 
+                break
+            }
+        }
+    }
+}
+
+function filter() {
+  if (index.length != 0) { filter_by_keyword() }
+  if (tags.length != 0 && index.length != 0) {
+    filter_by_keyword()  
+    $('.show').addClass('hide')
+      
+    $('.show').each((ind, el) => {
+        for (var i=0; i < tags.length; i++) {
+            if (el.hasAttribute(`data-${tags[i]}`)) { 
+                $(el).removeClass('hide')
+                break
+            }
+        }
+    }
+  } 
+  else if (index.length != 0) { filter_by_tag() }
+  else { $('.hide').removeClass('hide') }
+}
 
 ////////////////////////////////////////
 
-function filter() {
-  $('.hide').removeClass('hide')
+// function filter() {
+//   $('.hide').removeClass('hide')
   
-  if (index.length != 0 || tags.length != 0) {
-    $('.post').each((ind, el) => {
-      var num = 0
-      var bool = 0
+//   if (index.length != 0 || tags.length != 0) {
+//     $('.post').each((ind, el) => {
+//       var num = 0
+//       var bool = 0
       
-      for (var i=0; i < tags.length; i++) { // Tag
-        if (el.hasAttribute(`data-${tags[i]}`)) { num += 1; break }
-      }
+//       for (var i=0; i < tags.length; i++) { // Tag
+//         if (el.hasAttribute(`data-${tags[i]}`)) { num += 1; break }
+//       }
       
-      for (var i=0; i < index.length; i++) { // Keyword
-        if (el.hasAttribute(`post-${index[i]}`)) { bool = 1; break }
-      }
+//       for (var i=0; i < index.length; i++) { // Keyword
+//         if (el.hasAttribute(`post-${index[i]}`)) { bool = 1; break }
+//       }
 
-      if (index.length != 0) {
-        if (bool != 1) { $(el).addClass('hide') }
-      } else {
-        if (num != 0) { $(el).removeClass('hide') }
-      }
-      if (num == 0) { $(el).addClass('hide') }
-    })
-  }
+//       if (index.length != 0) {
+//         if (bool != 1) { $(el).addClass('hide') }
+//       } else {
+//         if (num != 0) { $(el).removeClass('hide') }
+//       }
+//       if (num == 0) { $(el).addClass('hide') }
+//     })
+//   }
 
   
 
-  console.log(tags)
-  console.log(index)
-}
+//   console.log(tags)
+//   console.log(index)
+// }
 
 // Search
 
