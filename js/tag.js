@@ -84,6 +84,7 @@ function Search() {
   var key = 'test'
   SearchPost(key)
   filter()
+  filter()
 }
 
 // Tag
