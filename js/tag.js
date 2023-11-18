@@ -86,12 +86,8 @@ inp.oninput = function() {
   console.log(inp.value)
   SearchPost(inp.value)
   filter()
-};
 
-function Search() {
-  var key = 'test'
-    
-  SearchPost(key)
+  SearchPost('' + inp.value)
   filter()
 }
 
