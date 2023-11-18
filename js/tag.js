@@ -77,6 +77,7 @@ function SearchPost(key) {
        var s = c['title'] + c['preview'] +  c['content']
       
        if (s.indexOf(key) != -1) { index.push(i + 1) }
+       console.log(index, 'search')
      }
   }
 }
