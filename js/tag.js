@@ -61,6 +61,7 @@ function filter() {
 // Search
 
 function SearchPost(key) {
+  console.log('searh post: ' + key)
   const xhr = new XMLHttpRequest();
  
   xhr.open('GET', "https://happydm09.github.io/B/search.json", true)
