@@ -86,6 +86,7 @@ var inp = document.querySelector("#inp");
 
 inp.oninput = function() {
   console.log(inp.value)
+  SearchPost("")
   SearchPost(inp.value)
   filter()
 
