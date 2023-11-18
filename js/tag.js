@@ -83,6 +83,7 @@ function SearchPost(key) {
 var inp = document.querySelector("#inp");
 
 inp.oninput = function() {
+  console.log(inp.value)
   SearchPost(inp.value)
   filter()
 };
