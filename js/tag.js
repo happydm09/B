@@ -80,11 +80,15 @@ function SearchPost(key) {
   }
 }
 
+var inp = document.querySelector("#inp");
+
+inp.oninput = function() {
+  SearchPost(inp.value)
+  filter()
+};
+
 function Search() {
   var key = 'test'
-    
-  SearchPost(key)
-  filter()
     
   SearchPost(key)
   filter()
