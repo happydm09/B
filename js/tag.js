@@ -35,9 +35,6 @@ function filter_by_tag() {
 
 
 function filter() {
-  console.log(index)
-  console.log(tags)
-    
   if (index.length != 0) { filter_by_keyword() }
   if (tags.length != 0 && index.length != 0) {
     filter_by_keyword()  
@@ -61,7 +58,6 @@ function filter() {
 // Search
 
 function SearchPost(key) {
-  console.log('searh post: ' + key)
   const xhr = new XMLHttpRequest();
  
   xhr.open('GET', "https://happydm09.github.io/B/search.json", true)
@@ -78,7 +74,6 @@ function SearchPost(key) {
       
        if (s.indexOf(key) != -1) { index.push(i + 1) }
      }
-      console.log(index, 'search')
      filter()
   }
 }
@@ -86,13 +81,7 @@ function SearchPost(key) {
 var inp = document.querySelector("#inp");
 
 inp.oninput = function() {
-  console.log(inp.value)
-  SearchPost("")
   SearchPost(inp.value)
-  filter()
-
-  SearchPost('' + inp.value)
-  filter()
 }
 
 // Tag
