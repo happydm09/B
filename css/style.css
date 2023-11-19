@@ -15,7 +15,7 @@
 .a {text-decoration: none;}
 
 @media (prefers-color-scheme: light) {
-  .body {color: black;background-color:white}
+  .body {color: black !important; background-color:white !important}
   .scheme {color-scheme: light !important;}
   .footer { background-color: #EFEFEF }
   .post-bg { background-color: white }
