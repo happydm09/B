@@ -22,7 +22,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .body {color: white;background-color:black}
+  .body {color: white !important; background-color:black !important}
   .f-color {color:#e8e6e3 !important}
   .nav-bg {background-color: #202325}
   .footer { background-color: #19181B }
