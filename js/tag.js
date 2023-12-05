@@ -34,7 +34,8 @@ function filter_by_tag() {
 }
 
 
-function filter() {
+function filter(key) {
+  $('#none').addClass('hide')
   if (index.length != 0) { filter_by_keyword() }
   if (tags.length != 0 && index.length != 0) {
     filter_by_keyword()  
@@ -51,7 +52,8 @@ function filter() {
   } 
   else if (index.length != 0) { filter_by_keyword() }
   else if (tags.length != 0) { filter_by_tag() }
-  else { $('.hide').removeClass('hide') }
+  else if (key == '') { $('.hide').removeClass('hide'); $('#none').addClass('hide') }
+  else { $('#none').removeClass('hide') }
 }
 
 
@@ -74,7 +76,7 @@ function SearchPost(key) {
       
        if (s.indexOf(key) != -1) { index.push(i + 1) }
      }
-     filter()
+     filter(key)
   }
 }
 
