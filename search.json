@@ -12,7 +12,7 @@ layout: none
       "tags"    : {{ post.tags | join: ', ' | jsonify }},
       "url"     : "{{ site.baseurl }}{{ post.url }}",
       "date"    : {{ post.date | jsonify }},
-      "content" : {{ post.content | jsonify }}
+      "content" : {{ post.content | strip_html | jsonify }}
     }
   {% endcapture %}
 
