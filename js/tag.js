@@ -53,7 +53,7 @@ function filter(key) {
   else if (index.length != 0) { filter_by_keyword() }
   else if (tags.length != 0) { filter_by_tag() }
   else if (key == '') { $('.hide').removeClass('hide'); $('#none').addClass('hide') }
-  else { $('#none').removeClass('hide') }
+  else { $('.show').addClass('hide'); $('#none').removeClass('hide') }
 }
 
 
