@@ -48,24 +48,3 @@
 .selected { background-color: rgba(131, 205, 255, 0.5 ) }
 
 .img-text { text-align: center; margin-top: 10px; margin-bottom: 13px; color: #989896; font-style: italic; font-size: 14px;}
-
-/* test */
-  .cmain {
-    width: 740px;
-    background-color: #242729;
-    padding: 1%;
-    border-radius: 7px;
-    text-align: left;
-  }
-  
-  .cfile {
-    background-color: #494e51;
-    padding: 5px;
-    text-decoration: none;
-    color: white;
-    border-radius: 5px;
-  }
-  
-  .selcted {
-    background-color: #3d4244;
-  }
