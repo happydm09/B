@@ -36,8 +36,15 @@ function filter_by_tag() {
 
 function filter(key) {
   $('#none').addClass('hide')
-  if (index.length != 0) { filter_by_keyword() }
-  if (tags.length != 0 && index.length != 0) {
+
+  var index_len = index.length
+  var tag_len = tags.length
+  var word = document.querySelector("#inp").value
+
+  if (word != '' && index_len == 0) { tag_len = 0 } 
+    
+  if (index_len != 0) { filter_by_keyword() }
+  if (tag_len != 0 && index_len != 0) {
     filter_by_keyword()  
     $('.show').addClass('hide')
       
@@ -50,8 +57,8 @@ function filter(key) {
         }
     })
   } 
-  else if (index.length != 0) { filter_by_keyword() }
-  else if (tags.length != 0) { filter_by_tag() }
+  else if (index_len != 0) { filter_by_keyword() }
+  else if (tag_len != 0) { filter_by_tag() }
   else if (key == '') { $('.hide').removeClass('hide'); $('#none').addClass('hide') }
   else { $('.show').addClass('hide'); $('#none').removeClass('hide') }
 }
