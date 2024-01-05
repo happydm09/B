@@ -59,7 +59,7 @@ function filter(key) {
   } 
   else if (index_len != 0) { filter_by_keyword() }
   else if (tag_len != 0) { filter_by_tag() }
-  else if (key == '') { $('.hide').removeClass('hide'); $('#none').addClass('hide') }
+  else if (tag_len == 0 && index_len == 0 && word == '' || key == '') { $('.hide').removeClass('hide'); $('#none').addClass('hide') }
   else { $('.show').addClass('hide'); $('#none').removeClass('hide') }
 }
 
