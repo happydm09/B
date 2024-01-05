@@ -3,8 +3,8 @@
   <div class="input-group body mb-3">
     <input type="text" class="form-control body" id = 'inp' value=''>
   </div>
-  {% for tag, value in site.data.tags %}
-    <span class="tag mb-1" data-tag="{{tag}}">{{value}}</span>
+  {% for tag in site.data.tags %}
+    <span class="tag mb-1" data-tag="{{tag | first}}">{{tag | last}}</span>
   {% endfor %}
 
   <hr>
