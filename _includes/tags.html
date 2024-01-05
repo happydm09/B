@@ -4,7 +4,7 @@
     <input type="text" class="form-control body" id = 'inp' value=''>
   </div>
   {% for tag in site.data.tags %}
-    <span class="tag mb-1" data-tag="{{tag}}">{{tag}}</span>
+    <span class="tag mb-1" data-tag="{{tag}}">{{site.data.format[tag]}}</span>
   {% endfor %}
 
   <hr>
