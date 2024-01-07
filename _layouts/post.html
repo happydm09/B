@@ -25,8 +25,10 @@ layout: main
       {{content}}
 
       <br><br>
-      <button type="button" class="btn btn-secondary" onClick='CopyLink()'><i class="bi bi-link-45deg"></i></button>
-      <a href='{{site.base-url}}/posts'><button type="button" class="btn btn-secondary">{{site.more-btn-text}}</button></a>
+      <span class='bc'>
+        <i class="bi bi-box-arrow-up" onClick='CopyLink()'></i>
+        <a href='{{site.base-url}}/posts'><i class="bi bi-chevron-down"></i></a>
+      </span>
       <br><br>
     </div>
 </section>
