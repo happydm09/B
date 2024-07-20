@@ -49,7 +49,7 @@ async function getProblem(id) {
   var a = await getAPI(`https://api-py.vercel.app/?r=https://solved.ac/api/v3/search/suggestion?query=id:${id}`)
   var level = a['problems'][0]['level']
   var name = a['problems'][0]['title']
-  return `<span><img src="https://static.solved.ac/tier_small/${level}.svg" width="19px"></img> <b><a class='color-tier-${getTier(level)} no-underline solved-font' href="https://www.acmicpc.net/problem/${id}" style="position: relative; top: -7px;">${id}번 '${name}'</a></b><span>`
+  return `<span><img src="https://static.solved.ac/tier_small/${level}.svg" width="19px"></img> <b><a class='color-tier-${getTier(level)} no-underline solved-font' href="https://www.acmicpc.net/problem/${id}">${id}번 '${name}'</a></b><span>`
 }
 
 async function getUser(name) {
