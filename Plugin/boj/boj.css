@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 1100;
+    font-style: normal;
+}
+
+.solved-font { font-family: 'Pretendard-Regular' }
+
+/* result color */
+.color-result-ac { color: #009874; 
+  font-weight:bold }
+.color-result-wa { color: #dd4124 }
+.color-result-tle { color: #fa7268 }
+.color-result-mle { color: #fa7268 }
+.color-result-rte { color: #5f4b8b }
+.color-result-ce { color: #0f4c81 }
+.color-result-pe { color: #fa7268 }
+.color-result-pac { color: #efc050; 
+  font-weight:bold }
+
+/* Arena tier color */
+.color-arena-Unrated { color: #818996 }
+.color-arena-C { color: #725039 }
+.color-arena-B { color: #2c4182 }
+.color-arena-A { color: #ffa515 }
+.color-arena-S { color: #46db66 }
+.color-arena-SS { color: #30a1e5 }
+.color-arena-SSS { color: #ff143b }
+.color-arena-X { color: #000000 }
+
+/* tier color */
+.color-tier-unrated { color: #2d2d2d }
+.color-tier-bronze { color: #ad5600 }
+.color-tier-sliver { color: #435f7a }
+.color-tier-gold { color: #ec9a00 }
+.color-tier-platinum { color : #27e2a4 }
+.color-tier-diamond { color: #00b4fc }
+.color-tier-ruby { color: #ff0062 }
+.color-tier-master { color: #b300e0 }
+
+/* etc */
+.no-underline { text-decoration: none; }
+.color-wait-load { color: #a49e9e }
