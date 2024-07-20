@@ -57,7 +57,7 @@ async function getUser(name) {
   var a = await getAPI(`https://api-py.vercel.app/?r=https://solved.ac/api/v3/user/show?handle=${name}`)
   var tier = a['tier']
 
-  return `<span><img src="https://static.solved.ac/tier_small/${tier}.svg" width="19px"></img> <b><a class='color-tier-${getTier(tier)} no-underline solved-font' href="https://solved.ac/profile/${name}" style="position: relative; top: -7px;">${name}</a></b><span>`
+  return `<span><img src="https://static.solved.ac/tier_small/${tier}.svg" width="19px"></img> <b><a class='color-tier-${getTier(tier)} no-underline solved-font' href="https://solved.ac/profile/${name}">${name}</a></b><span>`
 }
 
 async function getUserFromArena(name) {
